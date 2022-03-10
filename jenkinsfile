@@ -4,15 +4,15 @@ pipeline {
     stages {
           stage('checkout') {
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'mahender', url: 'https://github.com/mahi49/maven-pipeline.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'mahender', url: 'https://github.com/mahi49/pipeline-maven-jenkins.git ]]])
             }
         }
          stage('validate') {
-            steps {
-            sh ' mvn validate'
+            sh ' mvn validate'}
             }
         }
           stage('compile') {
+            steps {
             steps {
              sh 'mvn compile'
             }
