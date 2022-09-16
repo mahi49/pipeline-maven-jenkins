@@ -46,7 +46,7 @@ pipeline {
             sh 'world'
             }
         }
-        stage('sample') {
+        stage('file') {
             steps { 
             sh 'world'
             }
