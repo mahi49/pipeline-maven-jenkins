@@ -41,7 +41,7 @@ pipeline {
             sh 'world'
             }
         }
-        stage('new-hello-newworld') {
+        stage('new-hello') {
             steps { 
             sh 'world'
             }
