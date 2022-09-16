@@ -41,7 +41,7 @@ pipeline {
             sh 'world'
             }
         }
-        stage('new-helloww') {
+        stage('new-hellow') {
             steps { 
             sh 'world'
             }
