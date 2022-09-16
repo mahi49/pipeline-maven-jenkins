@@ -45,6 +45,13 @@ pipeline {
             steps { 
             sh 'world'
             }
-        }    
+        }
+        stage('sample') {
+            steps { 
+            sh 'world'
+            }
+        } 
+        
     }
+    
 }
